@@ -17,16 +17,34 @@
   }
 
   .contact-section {
-    background-color: #fffaf0; /* Milk color for desktop */
+    background-color: #fff;
     padding: 4rem 1rem;
   }
 
-  @media (max-width: 768px) {
-    .contact-section {
-      background-color: #ffe4e1; /* Pink for mobile */
-    }
+  /* General Button Style */
+  .btn-primary {
+    background-color: #fffaf0; /* Milk for desktop */
+    color: #000;
+    border: none;
+    transition: all 0.3s ease;
   }
 
+  .btn-primary:hover {
+    background-color: #f0e8dc;
+    color: #000;
+  }
+
+  /* Link styles */
+  .contact-section a {
+    color: #fffaf0;
+    text-decoration: underline;
+  }
+
+  .contact-section a:hover {
+    color: #f0e8dc;
+  }
+
+  /* Form Inputs */
   .contact-form .form-control {
     border-radius: 0.75rem;
     border: 1px solid #ced4da;
@@ -35,17 +53,33 @@
   }
 
   .contact-form .form-control:focus {
-    border-color: #0d6efd;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+    border-color: #fffaf0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 250, 240, 0.3);
   }
 
-  .contact-form textarea.form-control {
-    resize: vertical;
-  }
+  /* Mobile Overrides */
+  @media (max-width: 768px) {
+    .btn-primary {
+      background-color: #ffc0cb; /* Pink for mobile */
+      color: #000;
+    }
 
-  .contact-form button {
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+    .btn-primary:hover {
+      background-color: #f8a6b5;
+    }
+
+    .contact-section a {
+      color: #ffc0cb;
+    }
+
+    .contact-section a:hover {
+      color: #f8a6b5;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: #ffc0cb;
+      box-shadow: 0 0 0 0.25rem rgba(255, 192, 203, 0.3);
+    }
   }
 </style>
 
