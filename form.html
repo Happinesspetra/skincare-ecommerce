@@ -11,37 +11,44 @@
   <!-- WOW.js Animation CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
-    /* Optional custom styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fa;
-    }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+  }
 
-    .contact-form .form-control {
-      border-radius: 0.75rem;
-      border: 1px solid #ced4da;
-      box-shadow: none;
-      transition: all 0.3s ease;
-    }
+  .contact-section {
+    background-color: #fffaf0; /* Milk color for desktop */
+    padding: 4rem 1rem;
+  }
 
-    .contact-form .form-control:focus {
-      border-color: #0d6efd;
-      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
-    }
-
-    .contact-form textarea.form-control {
-      resize: vertical;
-    }
-
-    .contact-form button {
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
-    }
-
+  @media (max-width: 768px) {
     .contact-section {
-      padding: 4rem 1rem;
+      background-color: #ffe4e1; /* Pink for mobile */
     }
-  </style>
+  }
+
+  .contact-form .form-control {
+    border-radius: 0.75rem;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+
+  .contact-form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  }
+
+  .contact-form textarea.form-control {
+    resize: vertical;
+  }
+
+  .contact-form button {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+  }
+</style>
+
 </head>
 <body>
 
