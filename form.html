@@ -14,14 +14,25 @@
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
+    color: #000; /* All text black */
   }
 
   .contact-section {
     background-color: #fff;
     padding: 4rem 1rem;
+    color: #000;
   }
 
-  /* General Button Style */
+  /* General text & icon color */
+  .contact-section i,
+  .contact-section p,
+  .contact-section h1,
+  .contact-section h3,
+  .contact-section label {
+    color: #000;
+  }
+
+  /* Button Styles */
   .btn-primary {
     background-color: #fffaf0; /* Milk for desktop */
     color: #000;
@@ -30,18 +41,23 @@
   }
 
   .btn-primary:hover {
-    background-color: #f0e8dc;
+    background-color: #f0e8dc; /* Slightly darker milk */
     color: #000;
   }
 
-  /* Link styles */
+  /* Social Media Button Icons */
+  .btn-square i {
+    color: #000; /* Make icons black */
+  }
+
+  /* Link Styling */
   .contact-section a {
-    color: #fffaf0;
+    color: #000;
     text-decoration: underline;
   }
 
   .contact-section a:hover {
-    color: #f0e8dc;
+    color: #444;
   }
 
   /* Form Inputs */
@@ -50,6 +66,8 @@
     border: 1px solid #ced4da;
     box-shadow: none;
     transition: all 0.3s ease;
+    color: #000;
+    background-color: #fff;
   }
 
   .contact-form .form-control:focus {
@@ -61,19 +79,10 @@
   @media (max-width: 768px) {
     .btn-primary {
       background-color: #ffc0cb; /* Pink for mobile */
-      color: #000;
     }
 
     .btn-primary:hover {
-      background-color: #f8a6b5;
-    }
-
-    .contact-section a {
-      color: #ffc0cb;
-    }
-
-    .contact-section a:hover {
-      color: #f8a6b5;
+      background-color: #f8a6b5; /* Softer pink */
     }
 
     .contact-form .form-control:focus {
@@ -82,6 +91,7 @@
     }
   }
 </style>
+
 
 </head>
 <body>
