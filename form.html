@@ -1,8 +1,35 @@
-<div class="col-lg-7 col-md-6 wow fadeInUp px-3 px-md-0" data-wow-delay="0.5s">
-    <p class="mb-4">Feel free to reach out using the form below. I’m always open to collaborations, questions, or just a friendly hello <a href="https://instagram.com/happibo_">On Instagram!</a>.</p>
+<style>
+  /* Optional custom styles for a modern look */
+  .contact-form .form-control {
+    border-radius: 0.75rem;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+
+  .contact-form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  }
+
+  .contact-form textarea.form-control {
+    resize: vertical;
+  }
+
+  .contact-form button {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+  }
+</style>
+
+<div class="col-lg-7 col-md-6 wow fadeInUp px-3 px-md-0 contact-form" data-wow-delay="0.5s">
+    <p class="mb-4 fs-5 text-muted">
+        Feel free to reach out using the form below. I’m always open to collaborations, questions, or just a friendly hello 
+        <a href="https://instagram.com/happibo_" target="_blank" class="text-primary fw-semibold">on Instagram!</a>
+    </p>
 
     <form action="https://formspree.io/f/xovdqbel" method="POST" class="mx-auto">
-        <div class="row g-3">
+        <div class="row g-4">
             <div class="col-md-6">
                 <div class="form-floating">
                     <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
@@ -23,12 +50,14 @@
             </div>
             <div class="col-12">
                 <div class="form-floating">
-                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="min-height: 120px;" required></textarea>
+                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="min-height: 140px;" required></textarea>
                     <label for="message">Message</label>
                 </div>
             </div>
             <div class="col-12 text-center text-md-start">
-                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                <button class="btn btn-primary py-3 px-5 w-100 w-md-auto" type="submit">
+                    Send Message
+                </button>
             </div>
         </div>
     </form>
